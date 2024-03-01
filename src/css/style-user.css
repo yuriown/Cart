@@ -96,6 +96,13 @@ body{
     font-weight: bold;
 }
 
+#cart-qrcode img{
+    height: 70px;
+    position: absolute;
+    top: 240px;
+    left: 50px;
+}
+
 .identification span{
     color: white;
 }
