@@ -14,8 +14,8 @@
 
     #cart-validade{
         position: absolute;
-        left: 305px;
-        top: 200px;
+        font-size: 14px;
+        left: 290px;
+        top: 210px;
     }
-
 }
