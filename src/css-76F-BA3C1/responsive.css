@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        overflow-x: hidden; /* evita barra de rolagem horizontal */
+    }
+
+    /* esconde todo conteúdo interno do cartão no mobile */
+    #cart-qrcode,
+    #cart-validade,
+    #cart-picture {
+        display: none;
+    }
+
+    /* transforma o .cart em apenas a imagem responsiva */
+    .cart {
+        width: 100%;
+        height: auto;
+        background-image: url(../images/user-76F-BA3C1-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; /* ajusta para caber sem cortar */
+    }
+}

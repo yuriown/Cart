@@ -1,0 +1,59 @@
+.cart {
+    margin: 0 auto;          /* centraliza horizontalmente */
+    text-align: center;      /* centraliza o conteúdo */
+    width: 100%;             /* ocupa toda a largura disponível */
+    height: 100%;
+}
+
+#cart-picture img {
+    width: 100%;             /* ocupa toda a largura da .cart */
+    height: auto;            /* mantém proporção */
+    display: inline-block;
+}
+
+.cart-mobile-img {
+    display: none;           /* escondida no desktop */
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        overflow-x: hidden; /* evita barra de rolagem horizontal */
+    }
+
+    /* esconde todo conteúdo interno do cartão no mobile */
+    #cart-qrcode,
+    #cart-validade,
+    #cart-picture,
+    #cart-codigo,
+    .identification {
+        display: none;
+    }
+
+    /* remove dimensões fixas e deixa só a imagem mobile */
+    .cart {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* mostra a imagem para celular */
+    .cart-mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #cart-picture {
+        display: none;       /* esconde versão desktop */
+    }
+
+    .cart-mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
