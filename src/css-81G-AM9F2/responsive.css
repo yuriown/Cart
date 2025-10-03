@@ -1,47 +1,25 @@
-/* estilo padrão (desktop) */
-.cart {
-    margin: 0 auto;
-    position: relative;
-    width: 500px;
-    height: 316px;
-    background-image: url(../images/cart_estudante.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-}
-
-.cart-mobile-img {
-    display: none; /* escondido no desktop */
-}
-
-/* responsivo */
 @media screen and (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        font-size: 13px;
+        overflow-x: hidden; /* evita barra de rolagem horizontal */
     }
 
-    /* esconder conteúdo do cartão no mobile */
+    /* esconde todo conteúdo interno do cartão no mobile */
     #cart-qrcode,
     #cart-validade,
     #cart-picture {
         display: none;
     }
 
-    /* esconder background no mobile */
+    /* transforma o .cart em apenas a imagem responsiva */
     .cart {
-        background: none;
         width: 100%;
         height: auto;
-        display: block;
-    }
-
-    /* mostrar a imagem do cartão responsiva */
-    .cart-mobile-img {
-        display: block;
-        width: 100%;
-        height: auto;
+        background-image: url(../images/user-81G-AM9F2-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; /* ajusta para caber sem cortar */
     }
 }
