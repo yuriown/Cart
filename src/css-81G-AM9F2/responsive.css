@@ -1,21 +1,25 @@
-@media screen and (max-width:768px){
-    body{
-        background-size: auto;
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
         font-size: 13px;
+        overflow-x: hidden; /* evita barra de rolagem horizontal */
     }
 
-    .cart{
+    /* esconde todo conteúdo interno do cartão no mobile */
+    #cart-qrcode,
+    #cart-validade,
+    #cart-picture {
+        display: none;
+    }
+
+    /* transforma o .cart em apenas a imagem responsiva */
+    .cart {
         width: 100%;
-    }
-
-    #cart-picture{
-        width: 100%;
-    }
-
-    #cart-validade{
-        position: absolute;
-        font-size: 14px;
-        left: 290px;
-        top: 210px;
+        height: auto;
+        background-image: url(../images/user-81G-AM9F2-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; /* ajusta para caber sem cortar */
     }
 }
